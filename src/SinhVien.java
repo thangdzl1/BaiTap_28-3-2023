@@ -1,11 +1,7 @@
 
 public class SinhVien {
-    protected String Ten, MaSV, hocLuc;
-    protected double diemToan, diemLy, diemHoa, diemTB;
-
-    public double getDiemTB() {
-        return this.diemTB;
-    }
+    private String Ten, MaSV, hocLuc;
+    private double diemToan, diemLy, diemHoa, diemTB;
 
     public void display() {
         this.diemTB = ((int) (diemHoa + diemHoa + diemLy) * 100) / 3;
@@ -26,4 +22,39 @@ public class SinhVien {
                 + diemLy + "\tDiem Hoa: " + diemHoa + "\tDiem trung binh: " + diemTB);
     }
 
+    public String getHocLuc() {
+        return hocLuc;
+    }
+
+    public String getTen() {
+        return Ten;
+    }
+
+    public void setTen(String ten) {
+        Ten = ten;
+    }
+
+    public void setMaSV(String maSV) {
+        MaSV = maSV;
+    }
+
+    public double getDiemToan() {
+        return diemToan;
+    }
+
+    public void setDiemToan(double diemToan) {
+        this.diemToan = diemToan;
+    }
+
+    public double getDiemLy() {
+        return diemLy;
+    }
+
+    public void setDiemLy(double diemLy) {
+        this.diemLy = diemLy;
+    }
+
+    public void setDiemHoa(double diemHoa) {
+        this.diemHoa = diemHoa;
+    }
 }
